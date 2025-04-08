@@ -1,0 +1,244 @@
+/* GLOBAL STYLES  */
+html, body {
+  height: 100%;
+  margin: 0;
+  
+  /* --primary-color: UNDECIDED; */
+  /* --secondary-color: UNDECIDED TOO; */
+  --text-color: #333;
+  --background-color: #f4f4f4; 
+  /* --font-family: 'Arial', sans-serif; We'll think abt that too */
+}
+html{
+  height: 100%;
+  width: 100%;
+}
+/*LAYOUT WRAPPER*/
+.wrapper { 
+  display: flex;          /* This allows the use of flexbox for layout */
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*  MAIN SECTION  */
+.main {
+  flex: 1;                /* This allows the main section to grow and fill the available space (flexibility) */
+}
+
+/* TOPNAV / LOGO */
+.topnav .logo {
+  height: 69px;         /* ik teyah said dont use pixels but the pic will get blurry so im forcing it this size */
+  margin-right: 1.5em;  /* Space between logo and links */
+}
+
+.topnav:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*  PAGE BACKGROUND  */
+.body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* FAQ css */
+.main-faq {
+  display: inline;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;    
+  margin: 0;
+  background-color: #f4f4f4;
+  border: 20px solid purple;
+  padding: 25px;
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  box-sizing: border-box;
+  flex: 1;     
+
+}
+
+.faq-container {
+  margin-top: 30px;
+}
+
+.accordion {
+background-color: #f1f1f1;
+color :#444;
+cursor: pointer;
+}
+
+
+/* end of FAQ css */
+
+/* Portfolio css */
+.portfolio {
+  padding: 2rem;
+}
+
+.projects {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 1 1 200px;
+}
+
+.portfolio-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* This makes it circular */
+  border: 4px solid #aa00d0; /* Optional: adds a border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+}
+/* POPUP OVERLAY STYLES */
+.popup-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);  /* Dark transparent background */
+  display: none;                   /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Show popup when active */
+.popup-card.active {
+  display: flex;
+}
+
+/* POPUP CONTENT BOX */
+.popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .popup-content {
+    padding: 1rem;
+  }
+}
+
+/* end of portfolio css */
+
+/* contact css */
+.contact {
+  display: flex;
+  flex-wrap: nowrap; /* force horizontal layout unless broken */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.contact_img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.contact-form {
+  flex: 0 0 400px; /* fixed width unless screen too small */
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.2em;
+  margin-top: 0.4em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #6200ea;
+  color: white;
+  padding: 0.7em 1.1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #3700b3;
+}
+
+/* Responsive breakpoint ONLY when necessary */
+@media (max-width: 768px) {
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact_img {
+    max-width: 80%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
+
+/*  FOOTER  */
+footer {
+  width: 100%;
+  border-top: 2px solid #ccc; /* border for separation */
+  background-color: var(--text-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+  position: -webkit-sticky;
+  bottom: 0;
+}
+

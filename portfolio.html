@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <!-- responsive to different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header -->
+    <div class = "wrapper">
+        
+        <div class="topnav">
+            <a href="index.html">
+                <img src="yptc_transparent.png" alt="YPTC Logo" class="logo">
+            </a>    
+            <a href="index.html" class="active">Home</a>
+            <a href="portfolio.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+<!-- website content under here -->
+ <!--  TODO: add a stylesheet for logos -->
+ <main class="main"> 
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="projects">
+
+      <!-- POPUP 1 -->
+      <div class="popup-card" id="popup-jack">
+        <div class="popup-content">
+          <button class="close-btn" data-close>&times;</button>
+          <img src="avatar.jpg" alt="avatar" class="portfolio-pic">
+          <h3>Jack Daniels</h3>
+          <p>Jack’s detailed bio goes here...</p>
+          <a href="mailto:jack@example.com">
+            <img src="email-logo.webp" alt="Email Icon" width="50" height="50">
+          </a>
+          <a href="https://www.linkedin.com/in/jack-daniels">
+            <img src="linkedin-logo.webp" alt="LinkedIn Icon" width="50" height="50">
+          </a>
+        </div>
+      </div>
+
+      <!-- POPUP 2 -->
+      <div class="popup-card" id="popup-jill">
+        <div class="popup-content">
+          <button class="close-btn" data-close>&times;</button>
+          <img src="avatar2.jpg" alt="avatar" class="portfolio-pic">
+          <h3>Jill Smith</h3>
+          <p>Jill’s detailed bio goes here...</p>
+          <a href="mailto:jill@example.com">
+            <img src="email-logo.webp" alt="Email Icon" width="50" height="50">
+          </a>
+          <a href="https://www.linkedin.com/in/jill-smith">
+            <img src="linkedin-logo.webp" alt="LinkedIn Icon" width="50" height="50">
+          </a>
+        </div>
+      </div>
+
+      <!-- POPUP 3 -->
+      <div class="popup-card" id="popup-joe">
+        <div class="popup-content">
+          <button class="close-btn" data-close>&times;</button>
+          <img src="avatar3.jpg" alt="avatar" class="portfolio-pic">
+          <h3>Joe Bloggs</h3>
+          <p>Joe’s detailed bio goes here...</p>
+          <a href="mailto:joe@example.com">
+            <img src="email-logo.webp" alt="Email Icon" width="50" height="50">
+          </a>
+          <a href="https://www.linkedin.com/in/joe-bloggs">
+            <img src="linkedin-logo.webp" alt="LinkedIn Icon" width="50" height="50">
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD 1 -->
+      <div class="project-card" data-popup-target="#popup-jack">
+        <img src="avatar.jpg" alt="avatar" class="portfolio-pic">
+        <h3>Jack Daniels</h3>
+        <p>Short intro about Jack...</p>
+      </div>
+
+      <!-- PROJECT CARD 2 -->
+      <div class="project-card" data-popup-target="#popup-jill">
+        <img src="avatar2.jpg" alt="avatar" class="portfolio-pic">
+        <h3>Jill Smith</h3>
+        <p>Short intro about Jill...</p>
+      </div>
+
+      <!-- PROJECT CARD 3 -->
+      <div class="project-card" data-popup-target="#popup-joe">
+        <img src="avatar3.jpg" alt="avatar" class="portfolio-pic">
+        <h3>Joe Bloggs</h3>
+        <p>Short intro about Joe...</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+    <!-- The footer -->
+    <footer>
+        <div class="footer-content" id ="Footer">
+            <p> YPTC, an accenture extension all Rights Reserved </p>
+            <p> &copy; 2025 YPTC </p>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
