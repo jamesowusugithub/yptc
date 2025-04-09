@@ -5,52 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</Canvas></title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <!-- header -->
     <div class = "wrapper">
+                <div class="topnav">
+                    <a href="index.html">
+                        <img src="yptc_transparent.png" alt="YPTC Logo" class="logo">
+                    </a>    
+                    <a href="index.html" class="active">Home</a>
+                    <a href="portfolio.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
 
-        <div class="topnav">
-            <a href="index.html">
-                <img src="yptc_transparent.png" alt="YPTC Logo" class="logo">
-            </a>    
-            <a href="index.html" class="active">Home</a>
-            <a href="portfolio.html">About Us</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
+                <!-- actual content -->
+        <div id = "smooth-wrapper">
+            <div id = "smooth-content">  
+                <main class="main"> 
+                    <h2>Want to speak with us?</h2>
+                    <div class="contact">
+                        <img src="contact_img_trans.png" alt="Drawing of a person with a laptop" class="contact_img">
+                
+                        <form action="submit_the_inputs" id="contact_form" method="post" class="contact-form">
+                            <label for="name">Name</label><br> 
+                            <input type="text" id="name" name="name" required><br><br> 
+                
+                            <label for="email">Your email address</label><br> 
+                            <input type="email" id="email" name="email" placeholder= "example@yahoo.com" required><br><br>
+                
+                            <label for="content">Please explain what you'd like to ask one of our representatives about today.</label><br> 
+                            <textarea name="content" id="content" rows="4" cols="30" placeholder="For example: " required></textarea><br><br> 
+                
+                            <input type="submit" value="Send Message">
+                        </form>
 
-    <!-- actual content -->
-
-    <main class="main"> 
-        <h2>Want to speak with us?</h2>
-    
-        <div class="contact">
-            <img src="contact_img_trans.png" alt="Drawing of a person with a laptop" class="contact_img">
-    
-            <form action="submit_the_inputs" id="contact_form" method="post" class="contact-form">
-                <label for="name">Name</label><br> 
-                <input type="text" id="name" name="name"><br><br> 
-    
-                <label for="email">Your email address</label><br> 
-                <input type="email" id="email" name="email"><br><br>
-    
-                <label for="content">Please explain what you'd like to ask one of our representatives about today.</label><br> 
-                <textarea name="content" id="content" rows="4" cols="30"></textarea><br><br> 
-    
-                <input type="submit" value="Send Message">
-            </form>
-        </div>
-    </main> 
-    </div> 
-
-        <!-- The footer -->
-        <footer>
-            <div class="footer-content" id ="Footer">
-                <p> YPTC, an accenture extension all Rights Reserved </p>
-                <p> &copy; 2025 YPTC </p>
-            </div>
-        </footer>
+                        <!-- done 
+                        also some useful links (accessibility) to help go to the main page and exactly the point they want to go to in the main page
+                        essentiall i want this to be scrollabe
+                        for the scrolling animations wwe wanna add to make sense  -->
+                        <!-- ok so where do we start  -->
+                    </div>
+                </main>
+            </div>   
+        </div> 
+                <!-- The footer -->
+                <footer>
+                    <div class="footer-content" id ="Footer">
+                        <p> YPTC, an accenture extension all Rights Reserved </p>
+                        <p> &copy; 2025 YPTC </p>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </footer>
+    </div>
         <script src="script.js"></script>
 </body>
 
