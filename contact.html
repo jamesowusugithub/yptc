@@ -6,6 +6,9 @@
     <title>Contact Page</Canvas></title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap">
+
 
 </head>
 <body>
@@ -31,19 +34,19 @@
                                 <img src="contact_img_trans.png" alt="Drawing of a person with a laptop" class="contact_img">
                         
                                 <form action="submit_the_inputs" id="contact_form" method="post" class="contact-form">
-                                    <label for="name">Name</label><br> 
-                                    <input type="text" id="name" name="name" required><br><br> 
+                                    <label for="name"><strong>Name</strong></label><br> 
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required><br><br> 
                         
-                                    <label for="email">Your email address</label><br> 
+                                    <label for="email"><strong>Your email address</strong></label><br> 
                                     <input type="email" id="email" name="email" placeholder= "example@yahoo.com" required><br><br>
                         
-                                    <label for="content">Please explain what you'd like to ask one of our representatives about today.</label><br> 
-                                    <textarea name="content" id="content" rows="4" cols="30" placeholder="For example: " required></textarea><br><br> 
+                                    <label for="content"><strong>Please explain what you'd like to ask one of our representatives about today.</strong></label><br> 
+                                    <textarea name="content" id="content" rows="4" cols="30" placeholder="For example: How would I know I can work in tech?" required></textarea><br><br> 
                         
-                                    <input type="submit" value="Send Message">
+                                    <input type="submit" value="Send Message" id ="submit-btn">
                                 </form>
 
-                                <!-- done 
+                                <!-- done TODO
                                 also some useful links (accessibility) to help go to the main page and exactly the point they want to go to in the main page
                                 essentiall i want this to be scrollabe
                                 for the scrolling animations wwe wanna add to make sense  -->
@@ -55,7 +58,7 @@
                         <!-- The footer -->
                         <footer>
                             <div class="footer-content" id ="Footer">
-                                <p> YPTC, an accenture extension all Rights Reserved </p>
+                                <p> YPTC, an Accenture extension, all Rights Reserved </p>
                                 <p> &copy; 2025 YPTC </p>
                                 <i class="fab fa-linkedin"></i>
                                 <i class="fab fa-twitter"></i>
@@ -67,7 +70,7 @@
     </div>            
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
             <script src="script.js"></script>
 
 </body>

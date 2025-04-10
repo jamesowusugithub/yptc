@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap">
+
+  
 </head>
 <body>
     <!-- header -->
@@ -25,24 +29,25 @@
               </div>
 
         <!-- website content under here -->
-        <!--  TODO: add a stylesheet for logos -->
-        <main class="main"> 
+        <main class="main fade-in"> 
           <section class="portfolio">
-            <h2>Portfolio</h2>
             <div class="projects">
 
               <!-- POPUP 1 -->
+               <!-- TODO: Add the Avatars  -->
               <div class="popup-card" id="popup-jack">
                 <div class="popup-content">
                   <button class="close-btn" data-close>&times;</button>
-                  <img src="avatar.jpg" alt="avatar" class="portfolio-pic">
+                  <img src="https://robohash.org/ayan" alt="Avatar">
                   <h3>Ayan</h3>
-                  <p>Ayan's detailed bio goes here...</p>
-                  <a href="mailto:jack@example.com">
-                    <img src="email-logo.webp" alt="Email Icon" width="50" height="50">
-                  </a>
-                  <a href="https://www.linkedin.com/in/jack-daniels">
-                    <img src="linkedin-logo.webp" alt="LinkedIn Icon" width="50" height="50">
+                  <p>About Me
+                    Hi, I’m Ayan – an aspiring developer with a growing interest in web technologies. I enjoy learning by doing and have built a foundation in HTML and CSS, with some experience in JavaScript and Python. I’m passionate about tech and always looking for ways to develop new skills, explore creative ideas, and apply them in meaningful ways.
+                    
+                    Whether I’m building something from scratch or learning how things work behind the scenes, I’m motivated by curiosity and a drive to improve. This space is a reflection of that journey – a place to share what I’m learning and where I’m heading next.</p>
+                  
+                  <p>My LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/jack-daniels" target="_blank">
+                    <i class="fab fa-linkedin"></i>
                   </a>
                 </div>
               </div>
@@ -51,14 +56,15 @@
               <div class="popup-card" id="popup-jill">
                 <div class="popup-content">
                   <button class="close-btn" data-close>&times;</button>
-                  <img src="avatar2.jpg" alt="avatar" class="portfolio-pic">
-                  <h3>James</h3>
-                  <p>Jjames' detailed bio goes here...</p>
-                  <a href="mailto:jill@example.com">
-                    <img src="email-logo.webp" alt="Email Icon" width="50" height="50">
-                  </a>
-                  <a href="https://www.linkedin.com/in/jill-smith">
-                    <img src="linkedin-logo.webp" alt="LinkedIn Icon" width="50" height="50">
+                  <img src="https://robohash.org/dominic" alt="Avatar">
+
+                  <h3>Dominic</h3>
+                  <p>I am an aspiring software developer with growing experience in Python programming and web development using HTML and CSS. I have a basic understanding of database management with SQL and enjoy working with Django to create web applications. I am comfortable using development tools like Visual Studio Code and Visual Studio, and I am familiar with version control systems like Git and GitHub.
+                    I am passionate about technology and thrive on the creative process of building solutions with code. It excites me to learn, experiment, and bring ideas to life through programming.</p>
+                
+                  <p>My LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/dominic-grimley-15774b180" target="_blank">
+                    <i class="fab fa-linkedin"></i>
                   </a>
                 </div>
               </div>
@@ -67,37 +73,39 @@
               <div class="popup-card" id="popup-joe">
                 <div class="popup-content">
                   <button class="close-btn" data-close>&times;</button>
-                  <img src="avatar3.jpg" alt="avatar" class="portfolio-pic">
-                  <h3>Dominic</h3>
-                  <p>Dominic's detailed bio goes here...</p>
-                  <a href="mailto:joe@example.com">
-                    <img src="email-logo.webp" alt="Email Icon" width="50" height="50">
-                  </a>
-                  <a href="https://www.linkedin.com/in/joe-bloggs">
-                    <img src="linkedin-logo.webp" alt="LinkedIn Icon" width="50" height="50">
+                  <img src="https://robohash.org/james" alt="Avatar">
+
+                  <h3>James</h3>
+                  <p>I'm a team player who tries to turn complexity into clarity. I like React and TypeScript, when something needs solving, I’m not afraid to reach for my Python. Whether I’m working with my team or writing user-friendly documentation, I want to make things make sense for people.
+
+                    I helped and worked with my team to achieve 3rd place at Scotland’s biggest hackathon, and I earned the Caritas Award for my active role in community work. Now, I’m ready to bring those same problem-solving skills, creativity, and teamwork to exciting new tech projects.</p>
+                  
+                  <p>My LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/jmowusus" target="_blank">
+                    <i class="fab fa-linkedin"></i>
                   </a>
                 </div>
               </div>
 
               <!-- PROJECT CARD 1 -->
               <div class="project-card" data-popup-target="#popup-jack">
-                <img src="avatar.jpg" alt="avatar" class="portfolio-pic">
-                <h3>Jack Daniels</h3>
-                <p>Short intro about Jack...</p>
+                <img src="https://robohash.org/ayan" alt="Avatar" class = "portfolio-pic">
+                <h3>Ayan Sudheer</h3>
+                <p>Problem Solver with a purpose</p>
               </div>
 
               <!-- PROJECT CARD 2 -->
               <div class="project-card" data-popup-target="#popup-jill">
-                <img src="avatar2.jpg" alt="avatar" class="portfolio-pic">
-                <h3>Jill Smith</h3>
-                <p>Short intro about Jill...</p>
+                <img src="https://robohash.org/dominic" alt="Avatar" class = "portfolio-pic">
+                <h3>Dominic Grimely</h3>
+                <p>Aspiring software engineer and continuous learner</p>
               </div>
 
               <!-- PROJECT CARD 3 -->
               <div class="project-card" data-popup-target="#popup-joe">
-                <img src="avatar3.jpg" alt="avatar" class="portfolio-pic">
-                <h3>Joe Bloggs</h3>
-                <p>Short intro about Joe...</p>
+                <img src="https://robohash.org/james" alt="Avatar" class = "portfolio-pic">
+                <h3>James Sikowsfie</h3>
+                <p>Curious Learner, Laser Focused</p>
               </div>
 
             </div>
@@ -106,16 +114,18 @@
 
           <!-- The footer -->
           <footer>
-              <div class="footer-content" id ="Footer">
-                  <p> YPTC, an accenture extension all Rights Reserved </p>
-                  <p> &copy; 2025 YPTC </p>
-              </div>
-          </footer>
+            <div class="footer-content" id ="Footer">
+                <p> YPTC, an Accenture extension, all Rights Reserved </p>
+                <p> &copy; 2025 YPTC </p>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </footer>
       </div>
     </div>    
-    <script src="libs/gsap/gsap.min.js"></script>
-    <script src="libs/gsap/ScrollTrigger.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
       
 </body>
