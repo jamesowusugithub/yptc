@@ -1,15 +1,15 @@
 // imports 
-// import gsap from "./gsap-core.js";
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 // what fns do we want in the website
+
 // one to have animations when the form is submitted
-// one to make the folios pop up when clicked on 
+// one to make the folios pop up when clicked on ⬅️ this 
 // also one to make the folios do something when hovered over
 // one to make the answers to the faq pop up when clicked on ☑️
-//  rememeber that we want to be impressionable to impressionable teens so the animations should be modern - animate on scroll
-// also animations over the whole site when scrolling ☑️
-/* faq java */
+// also animations over the whole site when scrolling ☑️ ❌
+
+
 document.addEventListener('DOMContentLoaded', function () {
+  /* faq js */
     const accordions = document.querySelectorAll('.accordion');
   
     accordions.forEach(button => {
@@ -26,15 +26,69 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     });
-  });
-  
-  
-  
   /* END FAQ JS */
-// ok so if you dont know hwat a listener is, just read up on it on google, the function is pretty straightforward
-// u have the variables as the questionn and answer which i think u need to have a css thing called ".faqAnswer or .faqQuestion"
-// in thus fileu would use a forEach loop, them make 2 variables with query selector 
-// then u would use the event listener from the start and activate it when the item from the for loop(question) is clicked.
+
+// ========== gsap stuff ==============//
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray(".fade-in").forEach(element => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      y: 50,
+      duration: 0.89
+    });
+  });
+                        
+
+// The function we need there minimum is one to make the cards he made "popup"
+// so how would we make it? 
+// okay, the first one would be a listener for when the card is clicked
+// we would need 2 variables, 1 as the getter for the card 
+// 1 for the actual popup. 
+// Then we would have an if statement that asks if the card has popped up ]
+// (second variable) the we make it active (show the popup)
+
+// the other is when the close button is clicked it should close the popup
+// but first the popup function should work before we worry abt that
+
+//=== Portfolio page === //
+    const openButtons = document.querySelectorAll('[data-popup-target');
+    const closebuttons = document.querySelectorAll('[data-close]');
+
+
+// open popup
+  openButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const popupid = button.getAttribute('data-popup[-target');
+      const popup = document.querySelector(popupid);
+      popup.classList.add('active');
+    })
+  })
+
+// close popup
+  closebuttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const popup = button.closest('.popup-card');
+      popup.classList.remove('active');
+    })
+
+  
+});  
+
+// end of folio page
+
+
+// content page 
+    
+
+});
+  
+  
+  
 
 
 
